@@ -15,7 +15,7 @@ console.log = function() {
   
   originalLog.apply(console, [`[${timestamp}]`, ...arguments]);
 };
-const HTTP_PORT = process.argv[2] || 8081; // 合并后的统一端口
+const HTTP_PORT = process.argv[2] || 8281; // 合并后的统一端口
 const HTTP_DIRECTORY = path.join(__dirname, 'www'); // 静态文件目录
 
 // 创建 HTTP 服务器
